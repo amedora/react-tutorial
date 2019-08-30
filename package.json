@@ -14,7 +14,14 @@
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": [
+      "xo",
+      "xo-react"
+    ]
+  },
+  "xo": {
+    "semicolon": false,
+    "space": true
   },
   "browserslist": {
     "production": [
@@ -27,5 +34,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "eslint-config-xo": "^0.26.0",
+    "eslint-config-xo-react": "^0.20.0",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-react-hooks": "^2.0.1"
   }
 }
